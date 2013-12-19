@@ -1,10 +1,11 @@
 # -*- encoding: utf-8 -*-
-$:.push File.expand_path('../lib', __FILE__)
-require 'rdf/redis'
+# lib = File.expand_path('../lib', __FILE__)
+# $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
+# require 'rdf/redis'
 
 Gem::Specification.new do |s|
   s.name        = 'redis-store'
-  s.version     = RDF::Redis::VERSION
+  s.version     = '0.0.2'
   s.authors     = ['Luca Guidi']
   s.email       = ['me@lucaguidi.com']
   s.homepage    = ''
@@ -19,11 +20,10 @@ Gem::Specification.new do |s|
   s.require_paths = ['lib']
 
   s.add_dependency 'addressable', '>= 2.2.6'
-  s.add_dependency 'rdf',         '~> 0.3.4'
-  s.add_dependency 'redis',       '~> 2.2.0'
+  s.add_dependency 'rdf'
+  s.add_dependency 'redis'
 
-  s.add_development_dependency 'bundler',    '~> 1.1'
-  s.add_development_dependency 'rspec',    '~> 2.9.0'
-  s.add_development_dependency 'rdf-spec', '~> 0.3.4'
+  s.add_development_dependency 'bundler'
+  s.add_development_dependency 'rspec'
+  s.add_development_dependency 'rdf-spec'
 end
-
