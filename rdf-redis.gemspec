@@ -4,7 +4,7 @@
 # require 'rdf/redis'
 
 Gem::Specification.new do |s|
-  s.name        = 'redis-store'
+  s.name        = 'rdf-redis'
   s.version     = '0.0.2'
   s.authors     = ['Luca Guidi']
   s.email       = ['me@lucaguidi.com']
