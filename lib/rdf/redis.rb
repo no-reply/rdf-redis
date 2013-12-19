@@ -18,8 +18,8 @@ module RDF
     CONTEXT_KEY   = 'c'
 
     def initialize(options = {})
-      @repository = options.delete(:name)
-      @data = options.delete(:connection)
+      @repository = options.delete(:name).to_s
+      @data = options.delete(:connection).to_s
       @data ||= ::Redis.new(options)
     end
 
