@@ -19,7 +19,8 @@ module RDF
 
     def initialize(options = {})
       @repository = options.delete(:name)
-      @data = ::Redis.new(options)
+      @data = options.delete(:connection)
+      @data ||= ::Redis.new(options)
     end
 
     # @see RDF::Enumerable#each_statement.
