@@ -8,7 +8,7 @@ module RDF
     class Enumerator < defined?(::Enumerable::Enumerator) ? ::Enumerable::Enumerator : ::Enumerator
     end
 
-    VERSION = '0.0.2'
+    VERSION = '0.0.3'
 
     STATEMENT_PREFIX = 'statements'
 
